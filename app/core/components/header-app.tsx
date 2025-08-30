@@ -10,7 +10,9 @@ export default function HeaderApp() {
         <p>Icon</p>
         <View className="flex justify-center items-center gap-2">
           <ToggleTheme />
-          <Button className="font-semibold text-lg">Login</Button>
+          <Button className="font-semibold text-lg" variant="gradient">
+            Login
+          </Button>
         </View>
       </div>
     </nav>
