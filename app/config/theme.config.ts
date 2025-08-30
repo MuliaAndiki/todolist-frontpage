@@ -61,7 +61,7 @@ export const themeConfig: ThemeConfig = {
       foreground: '#0E0A17',
     },
     primary: {
-      background: '#FFBE5D',
+      background: '#EAE479',
       foreground: '#0E0A17',
     },
     secondary: {
@@ -96,12 +96,12 @@ export const themeConfig: ThemeConfig = {
     input: '#FFBE5D',
     ring: '#000000',
     shapeV1: {
-      parent: '#F3AF4A',
-      child: '#FFBE5D',
+      parent: '#0FA6E2',
+      child: '#EAE479',
     },
     shapeV2: {
-      child: '#',
-      parent: '#',
+      parent: '#72C2B2',
+      child: '#FFFFFF',
     },
   },
   dark: {
@@ -116,7 +116,7 @@ export const themeConfig: ThemeConfig = {
       foreground: '#F5EAFF',
     },
     primary: {
-      background: '#175753',
+      background: '#0FA6E2',
       foreground: '#000000',
     },
     secondary: {
@@ -151,12 +151,12 @@ export const themeConfig: ThemeConfig = {
     input: '#175753',
     ring: '#FCF7F8',
     shapeV1: {
-      parent: '#175753',
-      child: '#0A4440',
+      parent: '#0FA6E2',
+      child: '#EAE479',
     },
     shapeV2: {
-      child: '#',
-      parent: '#',
+      parent: '#72C2B2',
+      child: '#1A1A1A',
     },
   },
 };
