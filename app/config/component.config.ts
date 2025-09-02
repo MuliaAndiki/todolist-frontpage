@@ -1,4 +1,4 @@
-import { BenefitsCardType } from '../types/components';
+import { BenefitsCardType, ExperiensCardType, TodolistType } from '../types/components';
 import CategoryIcon from '../core/components/category-icon';
 import BenefitsIcon from '../core/components/benefit-icon';
 import ListIcon from '../core/components/list-icon';
@@ -17,5 +17,13 @@ export const BenefitCardData: BenefitsCardType[] = [
     icon: ListIcon,
     title: 'Motivasi & Konsistensi',
     desc: 'Setiap kali kamu mencentang tugas di Todo List ini, kamu akan langsung melihat progres nyata dari apa yang sudah kamu capai. Rasa puas itu akan jadi motivasi tambahan untuk melanjutkan langkah berikutnya. Seiring waktu, kebiasaan kecil yang konsisten ini akan membentuk pola kerja yang lebih disiplin dan berkelanjutan, sehingga tujuan jangka panjang.',
+  },
+];
+
+export const ExperiensCardData: ExperiensCardType[] = [
+  {
+    image: '/asset/content.svg',
+    title: 'Content',
+    desc: 'desc',
   },
 ];
