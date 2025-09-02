@@ -29,3 +29,20 @@ export interface divProps {
   className?: string;
   as?: keyof JSX.IntrinsicElements;
 }
+
+export interface FallbackProps {
+  title: string;
+  className?: string;
+}
+
+export interface SpreedProps {
+  orientation?: 'horizontal' | 'vertical';
+  className?: string;
+}
+
+export interface PopUpProps {
+  isOpen: boolean;
+  children: React.ReactNode;
+  onClose: () => void;
+  className?: string;
+}
