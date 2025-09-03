@@ -4,11 +4,12 @@ import TodoApi from '@/app/service/todos/todo.service';
 import { useAlert } from '../../use-alert';
 import { FormCreateTodoType } from '@/app/types/form';
 
-export const useEditTodo = (id: string, options?: { onAfterSuccess?: () => void }) => {
+export const useEditTodo = (options?: { onAfterSuccess?: () => void }) => {
   const alert = useAlert();
   const queryClient = useQueryClient();
   return useMutation<TResponse<any>, Error, any>({
-    mutationFn: (payload: FormCreateTodoType) => TodoApi.EditTodo(id, payload),
+    // ilmu
+    mutationFn: ({ id, payload }) => TodoApi.EditTodo(id, payload),
     onSuccess: () => {
       alert.toast({
         title: 'Berhasil',

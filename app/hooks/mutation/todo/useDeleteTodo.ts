@@ -3,11 +3,11 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import TodoApi from '@/app/service/todos/todo.service';
 import { useAlert } from '../../use-alert';
 
-export default function useDeleteTodo(id: string) {
+export default function useDeleteTodo() {
   const alert = useAlert();
   const queryClient = useQueryClient();
   return useMutation<TResponse<any>, Error, any>({
-    mutationFn: () => TodoApi.DeleteToto(id),
+    mutationFn: ({ id }) => TodoApi.DeleteToto(id),
     onSuccess: (res) => {
       alert.toast({
         title: 'Berhasil',
