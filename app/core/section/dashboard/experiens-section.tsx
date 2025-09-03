@@ -7,9 +7,9 @@ export default function ExperiensSection() {
   return (
     <main>
       <View className="flex min-h-screen justify-center items-center relative z-0 ">
-        <View className="flex justify-center items-center flex-col w-full">
+        <View className="flex justify-center items-center flex-col w-full p-2">
           <Label className="text-4xl font-extrabold">Experience</Label>
-          <View className="grid grid-cols-2 grid-rows-1 w-full mt-4 ">
+          <View className="grid lg:grid-cols-2 grid-rows-2 w-full mt-4  ">
             {ExperiensCardData.map((items, key) => (
               <ExperiensCard data={items} key={key} />
             ))}
